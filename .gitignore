@@ -1,0 +1,12 @@
+# node.js
+node_modules/
+npm-debug.log
+
+# vim
+*.swp
+
+# static
+build/
+dev/
+dist/
+tmp/

@@ -1,0 +1,11 @@
+{
+  "apps": [{
+    "name": "daoye",
+    "script": "./app.js",
+    "watch": true,
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "ignore_watch" : ["node_modules", "test", "log", "script"]
+  }]
+}

@@ -1,0 +1,11 @@
+{
+  "development": {
+    "mongo": "mongodb://root:Miya$sz1509@10.9.103.159:27017/helloiamkitty?authSource=admin",
+    "appPort": 3017
+  },
+
+  "production": {
+    "mongo": "mongodb://root:Miya$sz1509@10.9.103.159:27017/helloiamkitty?authSource=admin",
+    "appPort": 3017
+  }
+}

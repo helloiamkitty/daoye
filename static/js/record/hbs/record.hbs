@@ -1,0 +1,93 @@
+<div class="banner">
+    <div class="gamers">
+        <div class="avatars">
+            <div class="avatar-wrap dayu">
+                <div class="avatar">
+                    <div class="avatar-img js-avatar" data-src="{{dayu.avatar}}"></div>
+                </div>
+            </div>
+            <div class="avatar-wrap mvp">
+                <div class="avatar">
+                    <div class="avatar-img js-avatar" data-src="{{mvp.avatar}}"></div>
+                </div>
+            </div>
+            <div class="avatar-wrap tuhao">
+                <div class="avatar">
+                    <div class="avatar-img js-avatar" data-src="{{tuhao.avatar}}"></div>
+                </div>
+            </div>
+        </div>
+        <div class="names">
+            <div class="name">{{dayu.username}}</div>
+            <div class="name">{{mvp.username}}</div>
+            <div class="name">{{tuhao.username}}</div>
+        </div>
+        <div class="awards">
+            <div class="award-wrap dayu">
+                <div class="award"></div>
+            </div>
+            <div class="award-wrap mvp">
+                <div class="award"></div>
+            </div>
+            <div class="award-wrap tuhao">
+                <div class="award"></div>
+            </div>
+        </div>
+    </div>
+    <div class="room-info">
+        <div class="info-line">
+            <div class="info info-left">
+                <div class="icon-font user"></div>
+                <div class="info-text">创建者：{{creator.username}}</div>
+            </div>
+            <div class="info info-right">
+                <div class="icon-font clock"></div>
+                <div class="info-text">时间：{{create_time_text}}</div>
+            </div>
+        </div>
+        <div class="info-line">
+            <div class="info info-left">
+                <div class="icon-font room"></div>
+                <div class="info-text">牌&#12288;局：{{name}}</div>
+            </div>
+            <div class="info info-right">
+                <div class="icon-font chip"></div>
+                <div class="info-text">盲注：{{little_limit}}/{{limit}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="total">
+    <div class="total-info">
+        <div class="value">{{handid}}</div>
+        <div class="title">总手数</div>
+    </div>
+    <div class="total-info">
+        <div class="value">{{max_pot}}</div>
+        <div class="title">最大底池</div>
+    </div>
+    <div class="total-info">
+        <div class="value">{{all_takein}}</div>
+        <div class="title">总买入</div>
+    </div>
+</div>
+<div class="result-list">
+    {{#rank}}
+    <div class="gamer-line">
+        {{#if pin}}
+            <div class="gamer-pin"></div>
+        {{/if}}
+        <div class="gamer-avatar {{insuranceClass}} js-avatar" data-src="{{avatar}}"></div>
+        <div class="gamer-info">
+            {{#if hasNoInsurance}}
+            <div class="gamer-name">{{username}}</div>
+            <div class="gamer-operation">{{coin}}</div>
+            {{else}}
+            <div class="gamer-name insurance-name">{{username}}</div>
+            {{/if}}
+        </div>
+        <div class="gamer-result {{profit_class}}">{{profit_text}}</div>
+    </div>
+    <div class="line"></div>
+    {{/rank}}
+</div>

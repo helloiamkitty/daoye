@@ -1,0 +1,16 @@
+{
+  "name": "gulp-plugins",
+  "version": "1.0.0",
+  "description": "Gulp plugin for replace ssi.",
+  "main": "gulp-replace-ssi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "singno",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-util": "^3.0.1",
+    "replacestream": "^1.0.2",
+    "through2": "^0.6.3"
+  }
+}
